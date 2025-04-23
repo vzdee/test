@@ -28,3 +28,12 @@ function timer(){
 }
 
 setInterval(timer, 1000);
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("btnWhatsApp");
+  
+    btn.addEventListener("click", function () {
+      const url = "https://wa.me/529993596943?text=¡Quiero%20Participar%20en%20el%20Sorteo!%20🥳🤚";
+      window.open(url, "_blank"); // abre en nueva pestaña
+    });
+  });
