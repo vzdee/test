@@ -24,6 +24,7 @@ body {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #00ffcc;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 #timebox {
@@ -39,6 +40,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     min-width: 80px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .time h2 {
@@ -49,6 +51,7 @@ body {
 .time p {
     margin-top: 10px;
     font-weight: bold;
+    color: #fff;
 }
 
 /* COMPRAR Section */
@@ -62,6 +65,7 @@ body {
     font-size: 2.5rem;
     margin: 40px 0 20px;
     color: #00e6e6;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .premios {
@@ -77,12 +81,14 @@ body {
     border-radius: 15px;
     padding: 20px;
     width: 280px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .card:hover {
     transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .card img {
@@ -90,16 +96,45 @@ body {
     height: 180px;
     object-fit: contain;
     margin-bottom: 15px;
+    background-color: #b8b8b8;
+    border-radius: 8px;
 }
 
 .card h3 {
     color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    color: #00e6e6;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 0.95rem;
 }
+
+.como-participar {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.como-participar p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.como-participar strong {
+    color: #ffcc00;
+}
+
 
 /* Botón */
 button {
@@ -111,11 +146,13 @@ button {
     font-size: 1rem;
     cursor: pointer;
     margin: 20px 0;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
 }
 
 button:hover {
     background-color: #00a381;
+    transform: scale(1.05);
 }
 
 /* Footer / Términos y Condiciones */
@@ -136,7 +173,9 @@ button:hover {
 #tyc p {
     max-width: 800px;
     margin: 10px auto;
-    text-align: center;
+    text-align: justify;
+    line-height: 1.6;
+    color: #ccc;
 }
 
 i.bx {
@@ -145,7 +184,6 @@ i.bx {
     font-size: 1.2em;
     color: #00cc99;
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -175,4 +213,3 @@ i.bx {
         width: 90%;
     }
 }
-
