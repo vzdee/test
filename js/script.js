@@ -2,6 +2,8 @@ const DaysEl = document.getElementById('Days');
 const HoursEl = document.getElementById('Hours');
 const MinutesEl = document.getElementById('Minutes');
 const SecondsEl = document.getElementById('Seconds');
+const url = "https://api.whatsapp.com/send?phone=529993596943&text=¡Hola!%20Quiero%20participar%20en%20el%20sorteo";
+
 
 const targetDate = new Date('May 25 2025 20:00:00').getTime();
 
@@ -29,11 +31,12 @@ function timer(){
 
 setInterval(timer, 1000);
 
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("btnWhatsApp");
   
     btn.addEventListener("click", function () {
-      const url = "https://wa.me/529993596943?text=¡Quiero%20Participar%20en%20el%20Sorteo!%20🥳🤚";
-      window.open(url, "_blank"); // abre en nueva pestaña
+      const url = "https://api.whatsapp.com/send?phone=529993596943&text=¡Hola!%20Quiero%20participar%20en%20el%20sorteo";
+      window.location.href = url; // mejor que window.open en móviles
     });
   });
+  
